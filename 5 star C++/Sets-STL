@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin>>t;
+    set<int> s;
+    while(t--)
+    {
+        int x,y;
+        cin>>x>>y;
+        if(x==1)
+           s.insert(y);
+        else if(x==2)
+           s.erase(y);
+        else if(x==3 && s.find(y)!=s.end())
+          cout<<"Yes\n";
+        else
+           cout<<"No\n";
+    }
+    return 0;
+}
