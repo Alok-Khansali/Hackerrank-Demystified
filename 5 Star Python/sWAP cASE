@@ -1,3 +1,4 @@
+#naive approach
 def swap_case(s):
     w=""
     for x in s:
@@ -7,3 +8,6 @@ def swap_case(s):
         w+=x.upper()
     return (w)
 
+# Super Approach    using inbuilt swapcase()  
+def swap_case(s):
+    return s.swapcase()
