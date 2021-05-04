@@ -1,0 +1,13 @@
+import textwrap    #naive solution
+def wrap(s, m):
+    l=""
+    for x in range(0,len(s)-m+1,m):
+        print((s[x:x+m]))
+    print((s[len(s)-len(s)%m:]))
+    return l
+
+
+#DON'T USE BOTH
+import textwrap         #power of predefined functions
+def wrap(s, m):
+    return textwrap.fill(s,m)
