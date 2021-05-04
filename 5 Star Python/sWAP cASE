@@ -1,0 +1,9 @@
+def swap_case(s):
+    w=""
+    for x in s:
+       if(x.isupper()):
+        w+=x.lower()
+       else:
+        w+=x.upper()
+    return (w)
+
