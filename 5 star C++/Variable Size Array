@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    int r,q;
+    cin>>r>>q;
+    vector<vector<int>> v(r);
+    for(int i=0;i<r;i++)
+    {
+        int col;
+        cin>>col;
+        v[i]=vector<int>(col);
+        for(int j=0;j<col;j++)
+          cin>>v[i][j];
+    }  
+    vector<vector<int>> quer(q,vector<int>(2));
+    for(int i=0;i<q;i++)
+       { 
+           for(int j=0;j<2;j++)
+          cin>>quer[i][j];  
+         cout<<(v[quer[i][0]][quer[i][1]])<<'\n';
+       }
+    return 0;
+}
