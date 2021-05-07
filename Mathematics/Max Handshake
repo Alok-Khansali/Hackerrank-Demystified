@@ -1,14 +1,21 @@
+import java.io.*;
+import java.math.*;
+import java.text.*;
 import java.util.*;
-public class Solution
- {
-    static int lowestTriangle(double b, double a)
-    {
-        return((int)(Math.ceil((2*a)/b)));
-    }
-    public static void main(String[] args)
+import java.util.regex.*;
+public class Solution {
+    static int hn(int n)
      {
-        Scanner I = new Scanner(System.in);
-        double b = I.nextDouble(),a = I.nextDouble();
-        System.out.println(lowestTriangle(b, a));
+        return(n*(n-1)/2);
     }
+public static void main(String args[])
+ {
+    Scanner I=new Scanner(System.in);
+    int t=I.nextInt();
+    while(t-->0)
+    {
+        int n=I.nextInt();
+        System.out.println(hn(n));
+    }
+ }
 }
