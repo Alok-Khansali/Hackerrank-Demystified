@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+        int n,m;
+        string s;
+        cin>>n>>s>>m;
+        for(int i=0;i<s.size();i++)
+            if((int)s[i]>=65&&(int)s[i]<=90){
+                int a=s[i]-'A';
+                 a+=m;
+                 a%=26;
+                cout<<(char)(a+'A');
+             }
+            else if((int)s[i]>=97&&(int)s[i]<=122)
+                {
+                    int a=s[i]-'a';
+                    a+=m;
+                    a%=26;
+                    cout<<(char)(a+'a');
+                 }
+            else cout<<s[i];
+        return(0);
+}
+
