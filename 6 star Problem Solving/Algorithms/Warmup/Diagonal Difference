@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+long diagonalDifference(vector<vector<int>> v,int n) 
+{
+    long s=0;
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+          {
+              if(i==j)
+                s+=v[i][j];
+               if(i+j==(n-1))
+                  s-=v[i][j];
+          }
+    return(abs(s));
+}
+int main()
+{    
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n;
+    cin>>n;
+    vector<vector<int>> arr(n,vector<int>(n));
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            cin>>arr[i][j];
+    cout << diagonalDifference(arr,n)<< "\n";
+    return 0;
+}
+
