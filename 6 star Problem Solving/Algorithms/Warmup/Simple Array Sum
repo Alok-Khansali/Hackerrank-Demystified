@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int simpleArraySum(vector<int> a) {
+    for(int i=1;i<a.size();i++)
+       a[0]+=a[i];
+    return(a[0]);
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int ar_count;
+    cin >> ar_count;
+    vector<int> ar(ar_count);
+    for (int ar_itr = 0; ar_itr < ar_count; ar_itr++) 
+        cin>>ar[ar_itr];
+    int result = simpleArraySum(ar);
+    cout << result << "\n";
+    return 0;
+}
+
