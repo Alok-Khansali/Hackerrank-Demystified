@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+long long sumOfGroup(long long k)    // On closer inspection of the problem the answer is actually the cube of given integer
+{
+    long long x = k * k * k;
+    return(x);
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int k;
+    cin>>k;
+    cout << sumOfGroup(k)<< "\n";
+    return 0;
+}
