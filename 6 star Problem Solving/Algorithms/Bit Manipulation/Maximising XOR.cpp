@@ -1,5 +1,4 @@
 // Efficient soln:   using last set bit
-
 #include <bits/stdc++.h>
 using namespace std;
 int maximizingXor(int l, int r) 
