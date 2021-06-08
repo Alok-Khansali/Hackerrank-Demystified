@@ -1,3 +1,4 @@
+//MY INITIAL APPROACH
 #include <bits/stdc++.h>
 using namespace std;
 int lonelyinteger(vector<int> v) 
@@ -24,7 +25,7 @@ int main()
     return 0;
 }
 
-//BOSS MODE
+//BOSS MODE SOLUTION
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -42,4 +43,3 @@ int main()
     cout <<r<< "\n";
     return 0;
 }
-
