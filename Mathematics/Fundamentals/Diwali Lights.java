@@ -1,6 +1,6 @@
 import java.math.*;
 import java.util.*;
-public class Solution {
+public class Solution {                                //For big integer stuff i prefer java, python is equally good
     static long lights(int n) {                        //sum of binomial coefficients=2^n
         BigInteger a=new BigInteger("2"),b=new BigInteger("100000"),c=BigInteger.valueOf(n),d=a.modPow(c,b);
         return(d.longValue()-1);
