@@ -6,4 +6,4 @@
 
 ## Arrays
 
-Solutions to all the Array challenges In Data Structures are available in this folder.
+Solutions to all the Array challenges In Data Structures section are available in this folder.
