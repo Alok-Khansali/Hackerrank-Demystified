@@ -40,8 +40,7 @@ int main()
     return 0;
 }
 
-
-//////////WITHOUT HASHING
+/*/////////WITHOUT HASHING
 #include <bits/stdc++.h>   
 using namespace std;
 int main()
@@ -68,3 +67,4 @@ int main()
         cout<<i<<" ";
     return 0;
 }
+*/
