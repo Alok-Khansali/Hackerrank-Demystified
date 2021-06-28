@@ -7,10 +7,7 @@ int howManyGames(int st,int d,int f,int m)
     {
         tt-=c,c-=d,x++;
         if(c<=f)
-          {
-              x+=tt/f;
-              break;
-          }
+              return(x+tt/f);
     }
     return(x);
 }
@@ -23,4 +20,3 @@ int main()
     cout <<howManyGames(st,d,f,m)<< "\n";
     return 0;
 }
-
