@@ -2,19 +2,15 @@
 using namespace std;
 int pageCount(int n, int p) 
 {
-    if(n%2==0)
-      n+=1;
+    n=((n&1)?n:(n+1));
     if(p-1==min(p-1,n-p) && p-1!=n-p)
        return(p/2);
     return((n-p)/2);
 }
 int main() 
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
     int n,p;
     cin >> n>>p;
     cout <<pageCount(n, p)<< "\n";
     return 0;
 }
-
