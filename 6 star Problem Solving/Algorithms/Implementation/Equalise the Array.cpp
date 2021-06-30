@@ -15,4 +15,3 @@ int main()
     cout<<n-x;
     return 0;
 }
-
