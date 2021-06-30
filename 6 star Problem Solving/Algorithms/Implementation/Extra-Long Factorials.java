@@ -1,4 +1,4 @@
-import java.math.BigInteger;             //Like I said Earlier, For very long numbers i prefer JAVA :))
+import java.math.BigInteger;             //Like I said Earlier, For very large numbers I prefer JAVA or Python  :))
 import java.util.*; 
 class Solution
 { 
