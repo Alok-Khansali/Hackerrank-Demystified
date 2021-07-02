@@ -1,10 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-string isFibo(long double n) {             //10^20 ke liye long double
+string isFibo(long double n) {                                                   //10^20 ke liye long double
     long double l=(5*(n*n))+4,s=(5*(n*n))-4,sl=round(sqrt(l)),ss=round(sqrt(s));          
-        if(ss*ss==s||sl*sl==l)                   // if 5n^2+4 or 5n^2-4  is a perfect square
-       return("IsFibo");
-    return("IsNotFibo");
+    return((ss*ss==s||sl*sl==l) ? "IsFibo" : "IsNotFibo");                       // if 5n^2+4 or 5n^2-4  is a perfect square
 }
 int main()
 {
@@ -19,5 +17,3 @@ int main()
     }
     return 0;
 }
-
-
