@@ -1,13 +1,5 @@
-import java.io.*;
-import java.math.*;
-import java.text.*;
 import java.util.*;
-import java.util.regex.*;
 public class Solution {
-    static int hn(int n)
-     {
-        return(n*(n-1)/2);
-    }
 public static void main(String args[])
  {
     Scanner I=new Scanner(System.in);
@@ -15,7 +7,7 @@ public static void main(String args[])
     while(t-->0)
     {
         int n=I.nextInt();
-        System.out.println(hn(n));
+        System.out.println(n*(n-1)/2);
     }
  }
 }
