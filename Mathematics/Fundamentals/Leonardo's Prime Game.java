@@ -1,8 +1,4 @@
-import java.io.*;
-import java.math.*;
-import java.text.*;
 import java.util.*;
-import java.util.regex.*;
 public class Solution 
 {
     static int primeCount(long n) {
@@ -10,18 +6,10 @@ public class Solution
         long x[]={1L,6L,30L,210L,2310L,30010L,510510L,9699690L,223092870L,6469693230L,200560490130L,7420738134810L,304250263527210L,13082761331670030L,614889782588491410L};
         if(n==1)
          return(0);
-         else
-         {
           for(i=0;i<15;i++)
-           if(n>=x[i])
-            continue;
-            else
+           if(n<x[i])
             break;
-         if(i<15)
-             return(i);
-            else
-             return(15);
-         }    
+         return((i<15)?i:15);        
     }
     public static void main(String args[])
     {
@@ -31,6 +19,6 @@ public class Solution
         {
             long n=I.nextLong();
             System.out.println(primeCount(n));
-        } 
+        }
     }
 }
