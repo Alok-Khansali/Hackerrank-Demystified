@@ -9,13 +9,10 @@ int main()
     if(ry>y)
        f=10000;
     else if(y==ry)
-    {
         if(rm>m)
           f=(rm-m)*500;
-        else if(rm==m)
-            if(rd>d)
+        else if(rm==m && rd>d)
               f=(rd-d)*15;
-    }
     cout<<f<<"\n";
     return 0;
 }
