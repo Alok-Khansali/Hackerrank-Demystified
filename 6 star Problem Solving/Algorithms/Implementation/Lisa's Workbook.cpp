@@ -1,14 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 int workbook(int n, int k, vector<int> v) {
-    int c=0,pg=0;
+    int c=0,pg=1;
     for(int i=0;i<n;i++)
-          for(int j=1;j<=v[i];j+=k)
-          {
-              pg+=1;
+          for(int j=1;j<=v[i];j+=k,pg+=1)
               if(pg>=j && pg<=min(j+k-1,v[i]))
                 c++;
-          }
       return(c);     
 }
 int main()
@@ -23,4 +20,3 @@ int main()
     cout <<workbook(n, k, v)<< "\n";
     return 0;
 }
-
