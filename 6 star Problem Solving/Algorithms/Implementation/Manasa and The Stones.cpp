@@ -6,7 +6,7 @@ vector<int> stones(int n, int a, int b)
     if(a==b)
      {
          v.push_back((n-1)*a);
-     return(v); 
+        return(v); 
      }
     int x=max(a,b),y=min(a,b);
       for(int i=0;i<n;i++)
@@ -17,10 +17,9 @@ int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    int t;
+    int t,n,a,b;
     cin >> t;
     for (int i=0;i<t;i++) {
-        int n,a,b;
         cin >>n>>a>>b;
         vector<int> result = stones(n, a, b);
         for (int i = 0; i < result.size(); i++) 
