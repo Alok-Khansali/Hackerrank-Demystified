@@ -7,11 +7,7 @@ int runningTime(vector<int> arr) {
         v=arr[i];
         j=i-1;
         while(j>=0 && v<arr[j])                
-        {
-            arr[j+1]=arr[j];
-            j=j-1;
-            c++;
-        }
+            arr[j+1]=arr[j],j-=1,c++;
         arr[j+1]=v;
     }
     return(c);
@@ -25,7 +21,6 @@ int main()
     vector<int> arr(n);
     for (int i = 0; i < n; i++) 
         cin>>arr[i];
-    int result = runningTime(arr);
-     cout << result << "\n";
+     cout << runningTime(arr) << "\n";
     return 0;
 }
