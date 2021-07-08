@@ -20,8 +20,7 @@ int main()
     for (int q_itr = 0; q_itr < q; q_itr++) {
         string s;
         cin>>s;
-        string result = hackerrankInString(s);
-        cout << result << "\n";
+        cout << hackerrankInString(s) << "\n";
     }
     return 0;
 }
