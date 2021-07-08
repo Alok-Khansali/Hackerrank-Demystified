@@ -16,9 +16,6 @@ int main()
 {
     string s,ss;
     cin>>s>>ss;
-    int result = makingAnagrams(s, ss);
-    cout << result << "\n";
+    cout << makingAnagrams(s, ss)<< "\n";
     return 0;
 }
-
-
