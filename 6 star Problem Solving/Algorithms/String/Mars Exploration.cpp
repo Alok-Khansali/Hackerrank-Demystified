@@ -6,20 +6,18 @@ int marsExploration(string s) {
      {
            if(s[i]!='S')
               c++;
-            if(s[i+1]!='O')
+           if(s[i+1]!='O')
               c++;
-            if(s[i+2]!='S')
+           if(s[i+2]!='S')
               c++;
      }               
     return(c);
 }
 int main()
 {
-
     cin.tie(NULL);
     string s;
     cin>>s;
     cout <<marsExploration(s)<< "\n";
     return 0;
 }
-
