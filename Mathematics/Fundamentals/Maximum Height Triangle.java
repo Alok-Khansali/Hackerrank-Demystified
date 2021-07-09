@@ -8,8 +8,7 @@ public class Solution
     public static void main(String[] args)
      {
         Scanner I = new Scanner(System.in);
-        double b = I.nextDouble();
-        double a = I.nextDouble();
+        double b = I.nextDouble(),a = I.nextDouble();
         System.out.println(lowestTriangle(b, a));
     }
 }
