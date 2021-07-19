@@ -6,8 +6,7 @@ string isValid(string s)
     for(int i=0;i<s.size();i++)
        v[s[i]-'a']++;
     sort(v.begin(),v.end(),greater<int>());
-    val[0]=v[0];
-    oc[0]=1;
+    val[0]=v[0],  oc[0]=1;
     int r=0;
     for(int i=0;i<25;i++)
         if(v[i]==v[i+1])
@@ -19,8 +18,7 @@ string isValid(string s)
                r++;
                if(r>1)
                 return("NO");
-               val[r]=v[i+1];
-               oc[r]=1;
+               val[r]=v[i+1],  oc[r]=1;
            }
     if(r==0||(val[1]==1 && oc[1]==1)||(oc[0]==1 && val[0]-val[1]==1))
         return("YES");
