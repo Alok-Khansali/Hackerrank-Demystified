@@ -10,11 +10,8 @@ string superReducedString(string s)
          else
            st.pop();
       while(!st.empty())
-      {
-          a=st.top()+a;
-          st.pop();
-      }
-      return((a==””)?"Empty String":a);
+          a=st.top()+a ,   st.pop();
+      return( (a == ””)? "Empty String" : a);
 }
 int main()
 {
