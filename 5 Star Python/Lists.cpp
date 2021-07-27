@@ -15,4 +15,3 @@ for x in range(int(input())):
         a=l.pop()
     elif s[0]=="reverse":
         l.reverse()
-       
