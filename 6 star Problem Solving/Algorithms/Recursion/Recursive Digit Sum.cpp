@@ -1,28 +1,29 @@
 #include <bits/stdc++.h>
 using namespace std;
-int superDigit(string n)
+int64_t superDigit(int64_t n)
 {
-    if(n.size() == 1)
-     return (stoi(n));
-    long long int answer = 0;
-    for(char i : n)
+    if(n / 10 == 0)
+     return (n);
+    int64_t answer = 0;
+    while(n>0)
     {
-        answer += (i-'0');
+        answer += n%10;
+        n /= 10;
     }
-    return superDigit(to_string(answer));
+    return superDigit(answer);
 }
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     string n;
-    long long int k,a=0;
+    int64_t k,a=0;
     cin >> n >> k;
     for(char i : n)
     {
         a += (i-'0');
     }
     a *= k;
-    cout << superDigit(to_string(a)) << "\n";
+    cout << superDigit(a) << "\n";
     return 0;
 }
