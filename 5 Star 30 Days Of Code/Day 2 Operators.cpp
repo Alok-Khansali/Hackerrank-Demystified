@@ -1,4 +1,3 @@
-\\cpp
 #include <bits/stdc++.h>
 using namespace std;
 void solve(double mc, int tp, int tx) {
