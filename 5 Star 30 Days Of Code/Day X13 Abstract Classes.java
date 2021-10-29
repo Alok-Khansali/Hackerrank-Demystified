@@ -32,4 +32,3 @@ public class Solution {
         book.display();
     }
 }
-
