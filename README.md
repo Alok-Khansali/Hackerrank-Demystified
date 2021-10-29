@@ -10,7 +10,7 @@
 
 Just another repository, providing solutions to various Hackerrank Problems :)
 
-Currently, this repository has solutions related to C++, Java, Python, Problem Solving, Mathematics and 30 Days Of Code.
+Currently, this repository has solutions related to C++, Java, Python, Problem Solving, Mathematics,Sql and 30 Days Of Code.
 
 Since I am also in a learning phase, so solutions to a lot of questions are still not available.
 But I'm trying to answer all the questions available.
