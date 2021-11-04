@@ -38,16 +38,16 @@ int max_ar()
            {
                g2 = grid;
                m=1,w=1;
-               bool c = chc(i,j+w) & chc(i,j-w) & chc(i+w,j) & chc(i-w,j);
-               g2[i][j] = 'B';
-               sm = plus2();
+               bool c = chc(i,j+w) & chc(i,j-w) & chc(i+w,j) & chc(i-w,j);           //If all surrounding G's are available,set c as true
+               g2[i][j] = 'B';                 //convert current good to bad
+               sm = plus2();                   //get the second plus with this alteration
                mx = max(m*sm,mx);
                while(c)
                {
-                   m+=4;
-                   g2[i][j+w] =  g2[i][j-w] =  g2[i+w][j] = g2[i-w][j] ='B';
-                   sm = plus2();
-                   mx = max(m*sm,mx);
+                   m+=4;         //4 boxes added to our plus so add 4
+                   g2[i][j+w] =  g2[i][j-w] =  g2[i+w][j] = g2[i-w][j] ='B'; //set all good boxes to bad
+                   sm = plus2();       //get the second plus with this alteration
+                   mx = max(m*sm,mx);  //Get the maximal product
                    ++w;
                    c =chc(i,j+w) & chc(i,j-w) & chc(i+w,j) & chc(i-w,j);
                }
