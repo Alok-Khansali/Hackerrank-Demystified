@@ -1,0 +1,1 @@
+select distinct city from station where substring(city, 1, 1) in ('a','i', 'e', 'o','u', 'A', 'E', 'I', 'O', 'U');
