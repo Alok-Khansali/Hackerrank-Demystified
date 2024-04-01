@@ -1,0 +1,10 @@
+DELIMITER // 
+CREATE PROCEDURE tri() BEGIN
+DECLARE start INT DEFAULT 20;
+WHILE start > 0 DO
+SELECT REPEAT("* ", start);
+SET start = start - 1;
+END WHILE;
+END // 
+DELIMITER ;
+CALL tri();
